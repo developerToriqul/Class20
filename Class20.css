@@ -1,0 +1,83 @@
+.header-section{
+    background-color: #e3f2fd !important;
+} 
+.header-section img{
+    width: 40px;
+}
+
+/* header-bottom */
+.header-bottom{
+    padding: 20px 0;
+}
+.h-navbar{
+    width: 90%;
+    background-color: #e9ecef;
+    padding: 6px 0 1px 10px !important;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.t-section{
+    padding-top: 15px;
+}
+
+
+/* banner-section */
+.banner-section img{
+    height: 400px;
+}
+
+.alart{
+    padding: 20px 0;
+}
+.alert{
+    padding: 3px 1rem;
+}
+.progress{
+    margin-bottom: 10px;
+}
+
+
+/* collapse accordion item */
+.accordion-button::after{
+    width: 0;
+}
+
+.accordion-item a{
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid inherit;
+}
+.accordion-item a:hover{
+    border-bottom: 1px solid #1a76fd;
+}
+
+
+
+/* tooltip section */
+.tooltip-section{
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: .5rem;
+    overflow: auto;
+}
+
+/* pagi section */
+.pagi-section{
+    padding-top: 20px;
+}
+
+/* FOOTER SECTION */
+.footer-section{
+    background-color: #17a2b8;
+    color: #ddd;
+    padding: 10px 0;
+}
+.footer-section p{
+    margin-bottom: 0;
+}
