@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
 
    <link rel="stylesheet" href="Class20.css">
 
@@ -68,25 +69,17 @@
                   </nav>
             </div>
             <div class="col-xl-4 t-section">
-                         <!-- Note: A custom script is used to activate toasts:
-
-var toastElList = [].slice.call(document.querySelectorAll('.toast'))
-var toastList = toastElList.map(function (toastEl) {
-  return new bootstrap.Toast(toastEl, {
-    autohide: false
-  }).show()
-})
--->
-<div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="toast-header">
-    <strong class="me-auto">Bootstrap</strong>
-    <small>11 mins ago</small>
-    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-  </div>
-  <div class="toast-body">
-    Hello, world! This is a toast message.
-  </div>
-</div>
+              <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="..." class="rounded me-2" alt="...">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -211,57 +204,48 @@ var toastList = toastElList.map(function (toastEl) {
     </div>
 
 
-    <div class="tooltip-section">
+    <div class="tooltip-section mt-4">
       <div class="container">
         <div class="row">
           <div class="col-xl-5">
-              <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-              click here to learn more things
-            </button>
+                          <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Click here to learn more things
+              </button>
 
-            <!-- Modal -->
-            <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati perferendis adipisci iure alias quo facilis, optio explicabo fuga perspiciatis reiciendis dicta quidem! Alias error repellendus quidem facilis nulla, facere laborum repudiandae beatae cumque hic soluta quia maxime placeat provident cum perspiciatis voluptate saepe ad ipsum quisquam rem vel labore molestias voluptates! Fugiat at repellendus velit! Nihil ut vero quia laborum.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
 
           </div>
 
-          <div class="col-xl-7">
-            <!-- Note: A custom script is used to activate tooltips:
-
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-              return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-            -->
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tooltip on top">
+          <div class="col-xl-7 ">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
               Tooltip on top
             </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Tooltip on right">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
               Tooltip on right
             </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
               Tooltip on bottom
             </button>
-            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Tooltip on left">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
               Tooltip on left
             </button>
 
@@ -277,24 +261,27 @@ var toastList = toastElList.map(function (toastEl) {
         <div class="row">
           <div class="col-xl-12">
 
+            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+              <a class="navbar-brand" href="#">Project Name</a>
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading1">Verse 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#scrollspyHeading2">Verse 2</a>
+                </li>
+              </ul>
               
-              <!-- Actual scrollspy markup: -->
-              <nav id="navbar-example2" class="navbar navbar-light bg-light ">
-                <h3 class="navbar-brand">Project Name</h3>
-                <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link" href="#verse1">Verse 1</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#verse2">Verse 2</a></li>
-                </ul>
-                
-              </nav>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
-                <h4 id="verse1">Verse 1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptates quasi soluta reiciendis fuga. Dolorum distinctio laudantium aliquam. Numquam ea consequuntur nihil laudantium, nobis culpa facilis nulla dolores temporibus eaque <br> <br> ipsa, facere voluptates hic magni ut consectetur quidem eum doloribus necessitatibus? Adipisci aliquid soluta quod beatae voluptatem quam mollitia quisquam veritatis, voluptatum delectus nobis et ad hic, maiores minima nam.</p>
+            </nav>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque.</p>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h4 id="scrollspyHeading1">Verse 1</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempora, ea, vel recusandae ex est maxime et, cupiditate soluta necessitatibus fugit! Saepe eveniet quaerat perspiciatis sequi non omnis
+                <br> incidunt maiores quisquam, quo tempora perferendis ea corporis sunt natus sit error, dicta distinctio voluptas excepturi? Ab quibusdam eveniet recusandae voluptatum porro quidem molestiae maiores unde ipsa blanditiis? Exercitationem natus veniam vitae?</p>
 
-                <h4 id="verse2">Verse 2</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, numquam voluptas dolores consectetur alias iusto quos eos. Quaerat, libero quasi? Repellat vel, veniam distinctio officiis modi fuga cumque harum illum. Explicabo repudiandae 
-                <br> <br> adipisci in ipsa exercitationem saepe consequuntur quod nihil, atque rem necessitatibus tempora non culpa tenetur amet veniam hic earum aliquid animi repellat alias! Laudantium repudiandae molestias eligendi suscipit.</p>
+              <h4 id="scrollspyHeading2">Verse 2</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rerum accusantium ex ea repellat, officia pariatur quas ut, iure alias obcaecati, ipsa illo! Nam officia neque ducimus expedita quis reiciendis <br> <br>nihil tenetur delectus vel sint, soluta possimus! Odio nihil, eligendi cupiditate temporibus nobis ipsum unde laboriosam assumenda harum eius natus, tenetur ad, autem enim deserunt tempora molestias et ipsam quisquam Lorem ipsum dolor sit amet..</p>
+            </div>
 
           </div>
         </div>
@@ -335,7 +322,6 @@ var toastList = toastElList.map(function (toastEl) {
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
                     <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </div>
               </div>
@@ -359,14 +345,24 @@ var toastList = toastElList.map(function (toastEl) {
     
 
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
       })</script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+            <script>var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+          target: '#navbar-example'
+        })</script>
   </body>
 </html>
